@@ -1,0 +1,9 @@
+{
+  "Grammar_Consistency": {
+    "description": "Check for consistency in grammar usage, including tense, voice, and structure across sentences.",
+    "attributes": {
+      "score": "Rate on scale of 1-10",
+      "suggestion": ["list of suggestions on how to improve grammar of text"]
+    }
+  }
+}
