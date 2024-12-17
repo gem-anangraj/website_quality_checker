@@ -2,8 +2,29 @@
   "Grammar_Consistency": {
     "description": "Check for consistency in grammar usage, including tense, voice, and structure across sentences.",
     "attributes": {
-      "score": "Rate on scale of 1-10",
-      "suggestion": ["list of suggestions on how to improve grammar of text"]
+      "score": "Rate on a scale of 1-10",
+      "suggestion": ["List of suggestions on how to improve grammar of text"]
+    }
+  },
+  "Spelling_Accuracy": {
+    "description": "Identify any spelling errors or inconsistencies in the text.",
+    "attributes": {
+      "score": "Rate on a scale of 1-10",
+      "suggestion": ["List of suggestions on how to improve spelling of text"]
+    }
+  },
+  "Punctuation_Correctness": {
+    "description": "Check for consistency in punctuation usage.",
+    "attributes": {
+      "score": "Rate on a scale of 1-10",
+      "suggestion": ["List of suggestions on how to improve punctuation of text"]
+    }
+  },
+  "Readability": {
+    "description": "Evaluate the text’s readability for a general audience, noting any areas where sentence complexity or word choice could be simplified.",
+    "attributes": {
+      "score": "Rate on a scale of 1-10",
+      "suggestion": ["List of suggestions on how to improve readability of text"]
     }
   }
 }

@@ -84,11 +84,11 @@ def evaluate_text_quality_bedrock(text):
             output:
                 JSON object strictly following the schema: {json_schema}
 
-            instructions:
-            - follow the schema exactly.
-            - if any field is missing, assign null.
-            - use only actual text information; mark fields as null if missing."""
-
+            Instructions:
+            - Strictly follow the schema provided. Do not include any additional fields.
+            - Ensure all keys in the schema are present in the output JSON.
+            - If any field is missing from the input, assign `null` to the value.
+            - Do not generate extra fields or attributes not mentioned in the schema."""
 
     try:
         result = bedrock_llama3_1(prompt, model="meta.llama3-1-8b-instruct-v1:0")
@@ -101,8 +101,8 @@ def evaluate_text_quality_bedrock(text):
 
 
 # Streamlit App
-st.title("Hi Website Text Quality Evaluator modified")
-st.write("Evaluate the quality of text extracted from a given website using AWS Bedrock. modified")
+st.title("Website Text Quality Evaluator")
+st.write("Evaluate the quality of text extracted from a given website using AWS Bedrock.")
 
 # Input URL
 url = st.text_input("Enter the website URL:")
